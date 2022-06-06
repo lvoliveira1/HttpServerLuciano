@@ -48,6 +48,6 @@ app.post('/add', function(req, res){
 
 // start server
 // -----------------------
-app.listen(56386, function(){
-    console.log('Running on port 56386!')
+app.listen(process.env.PORT || 3000, function(){
+    console.log('Running on port from heroku!')
 })
